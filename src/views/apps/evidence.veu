@@ -1,0 +1,15 @@
+<template>
+  <div class="p-6">
+    <h1 class="text-2xl font-bold mb-4">Archivos</h1>
+    <ul>
+      <li v-for="file in files" :key="file.id" class="mb-2 p-2 border rounded">
+        {{ file.name }} - {{ file.size }}
+      </li>
+    </ul>
+  </div>
+</template>
+
+<script setup>
+import { useEvidence } from '@/composables/useEvidence.js';
+const { files } = useEvidence();
+</script>
