@@ -1,0 +1,13 @@
+import { ref, onMounted } from 'vue';
+import { fetchFiles } from '@/api/evidence.js';
+
+export function useEvidence() {
+  const files = ref([]);
+
+  onMounted(async () => {
+    files.value = await fetchFiles();
+  });
+
+  return { files };
+}
+
