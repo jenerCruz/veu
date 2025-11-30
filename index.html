@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos básicos -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Título de la aplicación -->
+    <title>TailAdmin - Dashboard con TimeTracker, AppSales y AppEvidence</title>
+
+    <!-- Meta tags para PWA -->
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Dashboard integrado con TimeTracker, AppSales y AppEvidence" />
+
+    <!-- Link al manifest para PWA -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Icono de la aplicación (para PWA) -->
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/img/icons/apple-touch-icon-152x152.png" />
+
+    <!-- Fuentes y estilos globales -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- TailwindCSS (asegúrate de que esté configurado en tu proyecto) -->
+    <link href="/src/assets/css/tailwind.css" rel="stylesheet" />
+  </head>
+
+  <body class="font-inter antialiased bg-gray-50 text-gray-900">
+    <!-- Contenedor principal donde se montará la app Vue -->
+    <div id="app"></div>
+
+    <!-- Scripts de la aplicación -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
